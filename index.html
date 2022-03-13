@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Librerias Ionic-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>  
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+   
+</head>
+
+<body>
+    <ion-app>
+        <ion-menu content-id="main-content">
+          <ion-header>
+            <ion-toolbar color="secondary"> <!--Color de barra del menú-->
+              <ion-title>App con menú desplegable</ion-title> <!--Mensaje en el menú-->
+            </ion-toolbar>
+          </ion-header>
+      
+          <ion-content>
+              <ion-list>
+                <ion-list-header> Aquí estan las opciones de Menú </ion-list-header>
+                 
+                <ion-menu-toggle auto-hide="false">
+                  <ion-item button>
+
+                    <ion-icon slot="end" name="home"> <!--Posicion e icono de home -->                     
+                    </ion-icon>
+
+                    <ion-label> Inicio </ion-label>
+                  </ion-item>
+
+                </ion-menu-toggle>
+              </ion-list>
+           </ion-content>
+        </ion-menu>
+      
+        <ion-page class="ion-page" id="main-content">
+         <ion-header>
+             <ion-toolbar>
+               <ion-buttons slot="end">
+
+                 <ion-menu-toggle> <!--Selector del menú-->
+                   <ion-button>
+
+                    <ion-icon slot="icon-only" name="menu"></ion-icon>
+
+                   </ion-button>
+                 </ion-menu-toggle>
+
+               </ion-buttons>
+               <ion-title> Titulo principal </ion-title>
+             </ion-toolbar>
+         </ion-header>
+
+          <ion-content class="ion-padding">
+            <h1>Contenido de la pagina</h1>
+            <p>Abra el menú despegable dando click en el icono superior derecho</p>
+          </ion-content>
+
+        </ion-page>
+      </ion-app>
+      
+      <ion-menu-controller></ion-menu-controller>
+</body>
+</html>
