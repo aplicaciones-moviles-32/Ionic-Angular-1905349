@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Librerias de ionic-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    
+    <title>AlgodeInstagram</title>
+</head>
+
+<body>
+    <ion-app>
+        <ion-tabs>
+          <ion-tab tab="inicio">
+            <ion-content>
+                <ion-grid id="contenido">
+                    
+                </ion-grid>
+            </ion-content>
+          </ion-tab>
+
+          <ion-tab tab="subir">
+            <h1>Aqui se suben las fotos</h1>
+          </ion-tab>
+
+          <ion-tab tab="perfil">
+            <ion-content>
+              <ion-header>
+                  <ion-toolbar>
+                      <ion-title id="nombre"></ion-title>
+                  </ion-toolbar>
+              </ion-header>
+
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <img src="" id="fotodeperfil">
+                        </ion-col>
+                        <ion-col>
+                            <p id="seguidores"><strong>12</strong></p>
+                            <p>Seguidores</p>
+                        </ion-col>
+                        <ion-col>
+                          <p id="seguidos"><strong>12</strong></p>
+                          <p>Seguidos</p>
+                        </ion-col>
+                        <ion-col>
+                          <p id="publicaciones"><strong>12</strong></p>
+                          <p>Publicaciones</p>
+                      </ion-col>
+                      <ion-col size="12">
+                        <p id="id"><strong></strong></p>
+                      </ion-col>
+                      <ion-col size="12">
+                          <p id="descripcion"></p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row id="imagenes">
+                    </ion-row>
+                </ion-grid>
+            </ion-content>
+          </ion-tab>
+      <!--Botones-->
+          <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="inicio">
+              <ion-label>Feed</ion-label>
+              <ion-icon name="home"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="subir">
+              <ion-label>Agregar</ion-label>
+              <ion-icon name="camera-outline"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="perfil">
+                <ion-label>Perfil</ion-label>
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-tab-button>
+
+          </ion-tab-bar>
+        </ion-tabs>
+      </ion-app>
+<script src="index.js"></script> <!--Una vez creado o ejecutado el HTML comienza a ejecutar el Js-->
+  </body>
+</html>
