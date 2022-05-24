@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "IA-1905349": {
+    "IA-1905340": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/IA-1905349",
+            "outputPath": "dist/IA-1905340",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -106,10 +106,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "IA-1905349:build:production"
+              "browserTarget": "IA-1905340:build:production"
             },
             "development": {
-              "browserTarget": "IA-1905349:build:development"
+              "browserTarget": "IA-1905340:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -117,7 +117,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "IA-1905349:build"
+            "browserTarget": "IA-1905340:build"
           }
         },
         "test": {
@@ -145,29 +145,29 @@
         "ionic-cordova-serve": {
           "builder": "@ionic/angular-toolkit:cordova-serve",
           "options": {
-            "cordovaBuildTarget": "IA-1905349:ionic-cordova-build",
-            "devServerTarget": "IA-1905349:serve"
+            "cordovaBuildTarget": "IA-1905340:ionic-cordova-build",
+            "devServerTarget": "IA-1905340:serve"
           },
           "configurations": {
             "production": {
-              "cordovaBuildTarget": "IA-1905349:ionic-cordova-build:production",
-              "devServerTarget": "IA-1905349:serve:production"
+              "cordovaBuildTarget": "IA-1905340:ionic-cordova-build:production",
+              "devServerTarget": "IA-1905340:serve:production"
             }
           }
         },
         "ionic-cordova-build": {
           "builder": "@ionic/angular-toolkit:cordova-build",
           "options": {
-            "browserTarget": "IA-1905349:build"
+            "browserTarget": "IA-1905340:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "IA-1905349:build:production"
+              "browserTarget": "IA-1905340:build:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "IA-1905349"
+  "defaultProject": "IA-1905340"
 }
